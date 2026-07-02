@@ -1,0 +1,42 @@
+{
+  "name": "proton-wallet",
+  "productName": "Proton Wallet",
+  "version": "1.0.0",
+  "description": "Proton Wallet desktop app (Electron wrapper) by Adam And His Agents",
+  "main": "src/main.js",
+  "author": "Adam And His Agents (AAHA)",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --linux"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.adamandhisagents.protonwallet",
+    "productName": "Proton Wallet",
+    "asar": true,
+    "files": [
+      "src/**/*",
+      "package.json"
+    ],
+    "linux": {
+      "target": [
+        "dir",
+        "AppImage"
+      ],
+      "category": "Finance",
+      "icon": "icons",
+      "executableName": "proton-wallet",
+      "artifactName": "proton-wallet-aaha-${version}-${arch}.AppImage",
+      "desktop": {
+        "Name": "Proton Wallet",
+        "Comment": "Self-custodial Bitcoin wallet by Proton",
+        "Categories": "Network;Finance;",
+        "StartupWMClass": "Proton Wallet"
+      }
+    }
+  }
+}
