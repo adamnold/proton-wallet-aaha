@@ -1,24 +1,54 @@
 {
-  "name": "proton-wallet-aaha", "productName": "Proton Wallet", "desktopName": "com.adamandhisagents.protonwallet", "version": "1.1.0",
+  "name": "proton-wallet-aaha",
+  "productName": "Proton Wallet",
+  "desktopName": "com.adamandhisagents.protonwallet",
+  "version": "1.1.1",
   "description": "Unofficial Proton Wallet desktop application for Linux by Adam And His Agents",
-  "main": "src/main.js", "author": "Adam And His Agents (AAHA)", "license": "Apache-2.0",
+  "main": "src/main.js",
+  "author": "Adam And His Agents (AAHA)",
+  "license": "Apache-2.0",
   "scripts": {
-    "start": "electron .", "check": "node --check src/main.js && node --check src/policy.js && node --check app.config.js && node scripts/validate-config.js",
-    "test": "node --test", "icons": "bash scripts/generate-icons.sh", "dist": "electron-builder --linux"
+    "start": "electron .",
+    "check": "node --check src/main.js && node --check src/policy.js && node --check app.config.js && node scripts/validate-config.js",
+    "test": "node --test",
+    "icons": "bash scripts/generate-icons.sh",
+    "dist": "electron-builder --linux"
   },
-  "devDependencies": { "electron": "43.1.0", "electron-builder": "26.15.3" },
+  "devDependencies": {
+    "electron": "43.1.0",
+    "electron-builder": "26.15.3"
+  },
   "build": {
-    "appId": "com.adamandhisagents.protonwallet", "productName": "Proton Wallet", "asar": true,
-    "files": ["src/**/*", "app.config.js", "build/icons/**/*", "package.json"],
+    "appId": "com.adamandhisagents.protonwallet",
+    "productName": "Proton Wallet",
+    "asar": true,
+    "files": [
+      "src/**/*",
+      "app.config.js",
+      "build/icons/**/*",
+      "package.json"
+    ],
     "linux": {
-      "target": ["dir", "AppImage"], "category": "Finance", "icon": "build/icons",
+      "target": [
+        "dir",
+        "AppImage"
+      ],
+      "category": "Finance",
+      "icon": "build/icons",
       "executableName": "proton-wallet-aaha",
-      "artifactName": "proton-wallet-aaha-v${version}-${arch}.AppImage", "syncDesktopName": true,
-      "desktop": { "entry": {
-        "Name": "Proton Wallet", "Comment": "Self-custodial Bitcoin wallet by Proton",
-        "Categories": "Network;Finance;", "Keywords": "bitcoin;wallet;finance;proton;",
-        "StartupWMClass": "com.adamandhisagents.protonwallet", "Terminal": false, "Type": "Application"
-      }}
+      "artifactName": "proton-wallet-aaha-v${version}-${arch}.AppImage",
+      "syncDesktopName": true,
+      "desktop": {
+        "entry": {
+          "Name": "Proton Wallet",
+          "Comment": "Self-custodial Bitcoin wallet by Proton",
+          "Categories": "Network;Finance;",
+          "Keywords": "bitcoin;wallet;finance;proton;",
+          "StartupWMClass": "com.adamandhisagents.protonwallet",
+          "Terminal": false,
+          "Type": "Application"
+        }
+      }
     }
   }
 }
