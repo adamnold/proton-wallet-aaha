@@ -8,7 +8,7 @@ web app (https://wallet.proton.me). It is not endorsed by or affiliated
 with Proton AG. "Proton" and "Proton Wallet" are trademarks of Proton AG.
 
 This project bundles no Proton code or assets other than the icon in
-icons/icon.png, which is a copy of Proton's own publicly served PWA icon
+assets/icon-source.png, which is a copy of Proton's own publicly served PWA icon
 (https://wallet.proton.me/assets/android-chrome-512x512.png). It only
 loads the Proton Wallet web app in an Electron window at runtime. Your
 use of Proton Wallet remains subject to Proton's own Terms of Service.

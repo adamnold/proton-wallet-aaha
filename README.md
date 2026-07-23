@@ -1,5 +1,7 @@
 # Proton Wallet for Linux — AAHA
 
+Last Updated: 2026-07-23
+
 Unofficial Proton Wallet Electron desktop app for Fedora KDE with a stable Wayland taskbar icon.
 
 ## Security and privacy notice
