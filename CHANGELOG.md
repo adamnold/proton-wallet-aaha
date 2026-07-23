@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.2.0 — 2026-07-23
+
+- Restored the regular Proton Wallet description on the hidden compatibility
+  launcher while preserving its stable KDE panel identity and hidden status.
+- Made validation builds explicitly non-publishing, added regression coverage,
+  and upgraded the GitHub Actions runtimes used by CI.
+- Updated the locked build dependency tree to use the patched `fast-uri` 3.1.4
+  release.
+
 ## v1.1.1 — 2026-07-15
 
 - Added the standard `~/.local/opt/aaha/proton-wallet-aaha` default and explicit
