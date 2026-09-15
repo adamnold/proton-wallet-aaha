@@ -1,6 +1,11 @@
 # Changelog
 
-Last Updated: 2026-07-23
+Last Updated: 2026-09-15
+
+## v1.3.0 — 2026-09-15
+
+- Updated to exact Electron 44.3.0 while keeping `electron-builder` pinned at
+  26.15.3.
 
 ## v1.2.0 — 2026-07-23
 
